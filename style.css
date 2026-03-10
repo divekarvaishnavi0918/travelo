@@ -1,0 +1,591 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+.desktop-navbar{
+    display: none;
+}
+
+.hero {
+    background-image: url(./images1/slide-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero p {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.hero button {
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #717FE0;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.categories {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.div1, .div2, .div3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 25px;
+}
+
+.div1 {
+    background-image: url(./images1/banner-01.jpg);
+}
+
+.div2 {
+    background-image: url(./images1/banner-02.jpg);
+}
+
+.div3 {
+    background-image: url(./images1/banner-03.jpg);
+}
+
+.div1 h1, .div2 h1, .div3 h1 {
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.div1 p, .div2 p, .div3 p {
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.Product h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.list, .list2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.list li, .list2 li {
+    list-style-type: none;
+}
+
+.list li a, .list2 li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+}
+
+.Product .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 15px auto;
+    color: grey;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+    width: 100px;
+}
+
+.Product .btn i {
+    color: black;
+    margin-right: 5px;
+}
+
+.tosale .prdtimg1 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 2s transform linear 1s;
+   
+}
+.tosale .icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.tosale .icon span{
+    color: grey;
+}
+.tosale p{
+    
+    padding: 10px;
+}
+.tosale .loadmore{
+    border-radius: 40px;
+    padding: 10px;
+    background-color: rgb(206, 204, 204);
+   margin: 20px auto 0 auto;
+   width: 120px;
+   height: 40px;
+   border: none;
+}
+.tosale .button{
+    margin: 0px 30%;
+}
+.footer{
+    background-color: #222222;
+    margin-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}    
+   
+.footer .category {
+
+    padding-top: 30px;
+    margin-bottom: 30px;
+      padding-left: 10px;
+}
+.footer .category h3{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.footer .category ul{
+    list-style-type: none;
+     padding-left: 10px;
+   
+}
+.footer .category ul li{
+  
+    line-height: 25px;
+    font-size: 10px;
+   
+}
+.footer .category ul li a{
+     color: rgb(178, 177, 177);
+    text-decoration: none;
+}
+.footer .help {
+     color: white;
+    padding-top: 10px;
+    margin-bottom: 0px;
+      padding-left: 10px;
+}
+.footer .help h3{
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.footer .help ul{
+     list-style-type: none;
+     padding-left: 10px;
+   padding-bottom: 20px;
+}
+.footer .help ul li{
+     line-height: 25px;
+    font-size: 10px;
+}
+.footer .help ul li a{
+     color: rgb(178, 177, 177);
+    text-decoration: none;
+}
+.footer .touch{
+    padding-left: 10px;
+}
+.footer .touch h3{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.footer .touch p{
+     color: rgb(178, 177, 177);
+      line-height: 20px;
+    font-size: 10px;
+     padding-left: 10px;
+     text-indent: 2px;
+     width: 200px;
+}
+.footer .icon{
+    color: rgb(178, 177, 177);
+    margin-top: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.footer .newsletter{
+    padding-left: 10px;
+    margin-top: 50px;
+}
+.footer .newsletter h3{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.footer .newsletter .newsletter-form input{
+    border: none;
+    outline: none;
+    width: 250px;
+    background-color:transparent;
+     border-bottom: 1px solid rgb(135, 133, 133);;
+}
+.footer .newsletter .newsletter-form input::placeholder{
+    color: rgb(178, 177, 177);
+      line-height: 20px;
+    font-size: 10px;
+    padding: 10px;
+}
+.footer .newsletter .newsletter-form button{
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #717FE0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer .newsletter .newsletter-form button:hover{
+    background-color: white;
+    color:#717FE0;
+}
+.footer .cards{
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+    margin-top: 50px;
+}
+.footer .cards img{
+    width: 25px;
+}
+.bottom-footer{
+    color: rgb(178, 177, 177);
+    font-size: 10px;
+     padding: 10px;
+     margin-top: 20px;
+     text-align: center;
+}
+.bottom-footer a{
+    text-decoration: none;
+    color: rgb(100, 90, 235);
+    
+}
+@media (min-width: 768px){
+  .hero p {
+    font-size: 25px;
+}
+.hero h1 {
+    font-size: 50px;
+}
+.hero button {
+    padding: 8px;
+    font-size: 15px;
+    width: 130px;
+}
+    .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .categories > div {
+    flex: 0 0 45%;
+  }
+  .categories > div:nth-child(3) {
+    flex: 0 0 45%; 
+  }
+  .div1 h1, .div2 h1, .div3 h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+.div1 p, .div2 p, .div3 p {
+    padding-left: 15px;
+    font-size: 20px;
+}
+  .Product h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+  .categories1 {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+    .list,
+  .list2 {
+    display: flex;
+    gap: 20px;
+  }
+    .list a,
+  .list2 a {
+    font-weight: 500;
+  }
+  .Product .btn {
+    display: inline-block;
+    margin: 10px 8px;
+    padding: 10px 
+  }
+.tosale {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tosale > div {
+  width: 32%;
+  margin-bottom: 20px;
+}
+.tosale .prdtimg1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 10px;
+  margin-top: 10px;
+}
+.tosale .button{
+    margin: 0px 45%;
+}
+.footer {
+  padding: 40px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+.footer .category,
+.footer .help,
+.footer .touch,
+.footer .newsletter {
+  width: 48%;
+  margin-bottom: 30px;
+}
+.footer .help h3{
+    margin-top: 15px;
+}
+.footer .touch h3{
+   margin-top: 50px;
+}
+.footer .cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.footer .bottom-footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+}
+@media (min-width: 1024px){
+    .navbar{
+        display: none;
+    }
+    .desktop-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    width: 100%;
+  }
+  .desktop-navbar .logo {
+    height: 35px;
+  }
+  .desktop-navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .desktop-navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+  }
+
+  .desktop-navbar ul li {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .desktop-navbar i {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+.categories {
+  display: flex;
+  flex-wrap: nowrap;              
+  justify-content: space-between; 
+  width: 100%;           
+}
+
+.categories .div1,
+.categories .div2,
+.categories .div3 {               
+  max-width: 32%;
+  height: 50vh;
+  background-size: cover;
+}
+
+
+.categories h1 {
+  padding: 20px;
+  font-size: 22px;
+  color: #000;
+}
+
+.categories p {
+  padding-left: 20px;
+  font-size: 20px;
+  color: #444;
+}
+.div1 h1, .div2 h1, .div3 h1 {
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+.div1 p, .div2 p, .div3 p {
+    padding-left: 15px;
+    font-size: 20px;
+}
+.Product h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.list li a, .list2 li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+.prd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tosale {
+  display: flex;
+  flex-wrap: wrap;             
+  justify-content: space-between;
+  padding: 40px 60px;
+  gap: 20px;                   /
+}
+
+/* each product card */
+.tosale > div {
+  width: 23%;             
+  text-align: center;
+  transition: 0.3s ease;
+}
+.tosale .prdtimg1 {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.tosale .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.tosale .icon span {
+  font-size: 14px;
+  color: #333;
+}
+
+.tosale .icon img {
+  width: 18px;
+  height: 18px;
+}
+.tosale div p{
+    text-align: left;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+.footer .category,
+.footer .help,
+.footer .touch,
+.footer .newsletter {
+  width: 23%;
+}
+.footer .touch h3{
+   margin-top: 45px;
+}
+.footer .help h3{
+    margin-top: 40px;
+    
+}
+.footer .category h3{
+    margin-top: 28px;   
+}
+.bottom-footer{
+    color: rgb(178, 177, 177);
+    font-size: 15px;
+     padding: 10px;
+     margin-top: 25px;
+     text-align: center;
+}
+
+
+  
+
+  
+
+}
